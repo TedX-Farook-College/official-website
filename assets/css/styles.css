@@ -1,7 +1,7 @@
 :root {
-    --red : #eb0028;
-    --black : #000000;
-    --white : #ffffff;
+    --red: #eb0028;
+    --black: #000000;
+    --white: #ffffff;
 }
 
 * {
@@ -11,19 +11,22 @@
 }
 
 body {
-    background-color: var(--black); 
+    background-color: var(--black);
     color: var(--white);
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 h1 {
-    text-align: center;
     font-weight: 700;
 }
 
-a,a:visited,a:hover {
+a,
+a:visited,
+a:hover {
     text-decoration: none;
 }
+
 .nav {
     width: 100vw;
     display: flex;
@@ -32,16 +35,19 @@ a,a:visited,a:hover {
     padding: 0.75rem 2rem;
     position: fixed;
 }
+
 .nav .nav-logo img {
     width: 20rem;
 }
+
 .nav .nav-links a {
     margin: 0 2rem;
     color: var(--white);
     font-weight: 500;
     font-size: 20px;
 }
-.gradient{
+
+.gradient {
     width: 1200px;
     z-index: -1;
     position: absolute;
@@ -49,57 +55,65 @@ a,a:visited,a:hover {
     left: 120px;
 
 }
-.hero{
-    padding-top: 10rem;  
+
+.hero {
+    padding-top: 10rem;
 
 }
-.hero h1{
+
+.hero h1 {
     font-size: 7rem;
     letter-spacing: -3.5px;
-    font-weight:700;
+    text-align: center;
+    font-weight: 700;
 }
-.hero p{
+
+.hero p {
     margin-top: 20px;
     text-align: center;
     font-size: 20px;
-    line-height:24px ;
+    line-height: 24px;
 }
 
-.container{
+.container {
     padding: 0 5rem;
 }
 
 /* tab section */
 
-.section-sub{
+.section-sub {
     margin-top: 4rem;
     display: flex;
     align-items: center;
     gap: 7px;
     margin-bottom: 25px;
 }
-.section-sub img{
+
+.section-sub img {
     width: 12px;
 }
-.section-sub h6{
+
+.section-sub h6 {
     text-transform: uppercase;
     letter-spacing: 1.2px;
 }
 
 
-.tabs{
+.tabs {
     border: 2px solid var(--white);
     border-radius: 20px;
     min-height: 250px;
 }
-.tab__sidebar{
-    padding: 0 12px; 
+
+.tab__sidebar {
+    padding: 0 12px;
     width: 100%;
     display: flex;
     align-items: center;
 
 }
-.tab__button{
+
+.tab__button {
     flex: 1;
     padding-top: 10px;
     text-transform: uppercase;
@@ -109,27 +123,92 @@ a,a:visited,a:hover {
     outline: none;
     cursor: pointer;
 }
-.tab__button--active{
-    color:var(--red);
-    border-top:5px solid var(--red) ;
+
+.tab__button--active {
+    color: var(--red);
+    border-top: 5px solid var(--red);
 }
-.tab__content{
+
+.tab__content {
     font-size: 20px;
     padding: 2.5rem;
-    line-height:25px; 
+    line-height: 25px;
     display: none;
     letter-spacing: 0.5px;
 }
-.tab__content--active{
+
+.tab__content--active {
     display: block;
 }
 
+/* Event Section */
+.event h1 {
+    background: linear-gradient(90deg, #FF2500 -16.21%, #FFFFFF 39.71%);
+    font-weight: 700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
 
+.event p {
+    margin-top: 25px;
+    font-size: 20px;
+    line-height: 25px;
+}
 
+/* Contact Section */
+.contact-sub {
+    margin-top: 10rem;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+.contact .left-section{
+    /* grid-column: 2/5; */
+}
+
+.contact .left-section .content h1 {
+    background: linear-gradient(90deg, #FF2500 -2.21%, #FFFFFF 13.71%);
+    font-weight: 700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.contact .left-section .content p{
+    width: 230px;
+    line-height: 20px;
+} 
+.contact .left-section .map{
+    margin-top: 2rem;
+
+}
+.contact .left-section .map img {
+    width: 280px;
+    /* margin-top: 1rem; */
+}
+.contact .left-section .map fieldset{
+    border-radius: 20px;
+    width: 0px;
+}
+.contact .left-section .map fieldset legend{
+    margin-left: 15px;
+}
+.contact .right-section fieldset{
+    padding: 10px;
+}
+.contact .right-section form{
+    display: flex;
+    flex-direction: column;
+}
+.contact .right-section form .form-footer{
+    
+}
 /* Media Query */
 
 @media only screen and (max-width: 600px) {
-    .gradient{
+    .gradient {
         display: none;
     }
 }

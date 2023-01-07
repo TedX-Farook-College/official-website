@@ -1,70 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <script defer src="./assets/js/main.js"></script>
-    <title>TEDx Farook College</title>
-  </head>
-  <body>
-    <!-- navbar -->
-    <div class="nav">
-      <div class="nav-logo">
-        <img src="./assets/images/logo.png" alt="TEDx Logo" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <script defer src="./assets/js/main.js"></script>
+  <title>TEDx Farook College</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <div class="nav">
+    <div class="nav-logo">
+      <img src="./assets/images/logo.png" alt="TEDx Logo" />
+    </div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Speakers</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+  <!-- hero -->
+  <img class="gradient" src="./assets/images/gradient.svg" alt="Radial gradient">
+  <div class="hero">
+    <h1>Ignite your future</h1>
+    <p>Generate React components with clean, extendable code.<br>
+      Build and iterate on your products faster than ever.</p>
+  </div>
+  <div class="container">
+    <!-- tabs -->
+    <div class="section-sub">
+      <img src="./assets/images/section_icon.png" alt="icon">
+      <h6>Understand about tedx</h6>
+    </div>
+    <div class="tabs">
+      <div class="tab__sidebar">
+        <button class="tab__button tab__button--active" data-for-tab="1">Ted</button>
+        <button class="tab__button" data-for-tab="2">TedX</button>
+        <button class="tab__button" data-for-tab="3">TedX Farook College</button>
       </div>
-      <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Speakers</a>
-        <a href="#">Gallery</a>
-        <a href="#">Contact</a>
+      <div class="tab__content tab__content--active" data-tab="1">
+        <p>TED is a nonprofit devoted to spreading ideas, usually in the form of short, powerful talks.
+          TED stands for technology, entertainment, and design.
+          TED's main aim is to inform and educate global audiences in an accessible way.
+          Through TED, many thinkers, creators, designers, artists, and other experts get to showcase their talents and
+          "ideas worth spreading" to the world.
+          Novel and valuable information/knowledge are exhibited by masterminds.
+          TED has innumerable followers and is viewed by more than 3 billion enthusiasts annually.
+          TED makes an impact by generating and sharing knowledge that matters.</p>
+      </div>
+      <div class="tab__content" data-tab="2">
+        <p>TEDx is a grassroots initiative,
+          created in the spirit of TED’s overall mission to research and discover “ideas worth spreading”.
+          TEDx brings the spirit of TED to local communities around the globe through TEDx events.
+          Tedx makes ideas accessible to students, through which a more thoughtful student community is created.
+          Such a platform inspires learning minds to explore knowledge beyond their text books and classrooms and expand
+          into the future with more open minds.</p>
+      </div>
+      <div class="tab__content" data-tab="3">
+        <p>TedxFarookCollege is an independently organised TED event that aims to simultaneously be a solace and a
+          source of information to the thinkers and knowledge gatherers of Malabar.
+          Farook College is a hub of educational institutions, an apt venue for such an event to reach the best of
+          audiences.
+          TedxFarookCollege is the first independent TED event hosted by an Arts and Science college in Malabar and
+          hopes to be a source of inspiration for students all over Kerala to host and attend similar events in the
+          future (avenir).
+          A futuristic approach towards information is essential to attain progress in one's academic and personal life.
+          This is the idea that guides the minds of the organisers and team working behind the scenes of
+          TedxFarookCollege.
+          It also forms the theme for the event and its talks.</p>
+      </div>
+
+    </div>
+    <div class="section-sub">
+      <img src="./assets/images/section_icon.png" alt="icon">
+      <h6>Fit your workflow</h6>
+    </div>
+    <div class="event">
+      <h1>Why should you attend a TED event</h1>
+      <p>
+        Attending a TED event will be on everyone's bucket list and with TEDx,
+        you get a TED-like experience. If you are keen on listening to mind-blowing ideas by talented
+        speakers, TEDx is your way to go!. The “ideas worth spreading” in TEDx events gives you a fresh set of
+        perspective.
+        TEDx is a unique gathering of like-minded people that can unleash ideas and inspiration for tomorrow.
+      </p>
+    </div>
+
+    <div class="section-sub contact-sub">
+      <img src="./assets/images/section_icon.png" alt="icon">
+      <h6>Connect with us</h6>
+    </div>
+    <div class="contact">
+      <div class="left-section">
+        <div class="content">
+          <h1>Contact us</h1>
+          <p>Fill out our form, and we'll try to get back to you within 2 hours.</p>
+        </div>
+        <div class="map">
+          <fieldset>
+            <legend>Farook College, Calicut</legend>
+            <img src="./assets/images/map.png" alt="Map of Farook College">
+          </fieldset>
+        </div>
+      </div>
+      <div class="right-section">
+        <fieldset>
+          <form action="">
+            <fieldset>
+              <legend>Name</legend>
+              <input type="text" placeholder="Enter your name">
+            </fieldset>
+            <fieldset>
+              <legend>E-Mail</legend>
+              <input type="email" placeholder="Enter your email">
+            </fieldset>
+            <fieldset>
+              <legend>Message</legend>
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message here"></textarea>
+            </fieldset>
+            <div class="form-footer">
+              <a href="">Join us on Discord</a>
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </fieldset>
+
+
       </div>
     </div>
-    <!-- hero -->
-    <img  class="gradient" src="./assets/images/gradient.svg" alt="Radial gradient">
-    <div class="hero">      
-      <h1>Ignite your future</h1>
-      <p>Generate React components with clean, extendable code.<br>
-        Build and iterate on your products faster than ever.</p>
-    </div>
-    <div class="container">
-      <!-- tabs -->
-      <div class="section-sub">
-        <img src="./assets/images/section_icon.png" alt="icon">
-        <h6>Understand about tedx</h6>
-      </div>
-      <div class="tabs">
-        <div class="tab__sidebar">
-            <button class="tab__button tab__button--active" data-for-tab="1">Ted</button>
-            <button class="tab__button" data-for-tab="2">TedX</button>
-            <button class="tab__button" data-for-tab="3">TedX Farook College</button>
-        </div>
-        <div class="tab__content tab__content--active" data-tab="1">
-            <p>TED is a nonprofit devoted to spreading ideas, usually in the form of short, powerful talks.
-                 TED stands for technology, entertainment, and design.
-                  TED's main aim is to inform and educate global audiences in an accessible way.
-                   Through TED, many thinkers, creators, designers, artists, and other experts get to showcase their talents and "ideas worth spreading" to the world.
-                    Novel and valuable information/knowledge are exhibited by masterminds. 
-                    TED has innumerable followers and is viewed by more than 3 billion enthusiasts annually. 
-                    TED makes an impact by generating and sharing knowledge that matters.</p>
-        </div>
-        <div class="tab__content" data-tab="2">
-            <p>TEDx is a grassroots initiative, 
-                created in the spirit of TED’s overall mission to research and discover “ideas worth spreading”. 
-                TEDx brings the spirit of TED to local communities around the globe through TEDx events. 
-                Tedx makes ideas accessible to students, through which a more thoughtful student community is created. 
-                Such a platform inspires learning minds to explore knowledge beyond their text books and classrooms and expand into the future with more open minds.</p>
-        </div>
-        <div class="tab__content" data-tab="3">
-            <p>TedxFarookCollege is an independently organised TED event that aims to simultaneously be a solace and a source of information to the thinkers and knowledge gatherers of Malabar. 
-                Farook College is a hub of educational institutions, an apt venue for such an event to reach the best of audiences. 
-                TedxFarookCollege is the first independent TED event hosted by an Arts and Science college in Malabar and hopes to be a source of inspiration for students all over Kerala to host and attend similar events in the future (avenir). 
-                A futuristic approach towards information is essential to attain progress in one's academic and personal life. This is the idea that guides the minds of the organisers and team working behind the scenes of TedxFarookCollege. 
-                It also forms the theme for the event and its talks.</p>
-        </div>
-    </div>
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>

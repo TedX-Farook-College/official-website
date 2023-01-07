@@ -1,0 +1,43 @@
+:root {
+    --red : #eb0028;
+    --black : #000000;
+    --white : #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black); 
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+}
+
+a,a:visited,a:hover {
+    text-decoration: none;
+}
+.nav {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 2rem;
+}
+.nav .nav-logo img {
+    width: 12rem;
+}
+.nav .nav-links a {
+    margin: 0 1.4rem;
+    color: var(--white);
+}
+
+
+

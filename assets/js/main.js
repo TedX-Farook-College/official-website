@@ -1,9 +1,18 @@
 // Navigation Menu
 
 
+// Navbar 
+
+window.addEventListener("scroll", () => {
+    var nav = document.querySelector('.nav')
+     if(window.pageYOffset > 80) {
+        nav.classList.add('nav-bg')
+     } else {
+       nav.classList.remove('nav-bg')
+     }
+ })
 
 // tab section
-
 
 function setupTab(){
     document.querySelectorAll(".tab__button").forEach(button =>{
@@ -28,9 +37,4 @@ function setupTab(){
 }
 document.addEventListener("DOMContentLoaded",()=>{
     setupTab();
-
-    //document.querySelectorAll(".tabs").forEach(tabContainer=>{
-    //    tabContainer.querySelector(".tab__sidebar .tab__button"),click();
-    //});
-
 });

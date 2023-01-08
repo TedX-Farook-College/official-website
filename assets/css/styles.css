@@ -171,7 +171,7 @@ a:hover {
   line-height: 25px;
 }
 
-/* Contact Section */
+/* ============================= Contact Section Start ============================= */
 .contact-sub {
   margin-top: 10rem;
 }
@@ -301,8 +301,9 @@ a:hover {
   cursor: pointer;
   opacity: 0.9;
 }
+/* ============================= Contact Section End ============================= */
 
-/* Footer Section */
+/* ============================= Footer Section Start ============================= */
 .footer-distributed {
   width: 100%;
   padding-bottom: 20px;
@@ -368,6 +369,7 @@ a:hover {
 .footer-distributed .footer-credits a:hover {
   color: var(--white);
 }
+/* ============================= Footer Section End ============================= */
 
 /* Media Query */
 /* ================================================================ */
@@ -509,9 +511,12 @@ a:hover {
     line-height: 22px;
     letter-spacing: 0.6px;
   }
-  .tabs .tab__sidebar:nth-child(1),
-  .tabs .tab__sidebar:nth-child(2) {
-    
+  /* .tabs .tab__sidebar .tab__button {
+    width: 100%;
+  } */
+  .tabs .tab__sidebar .tab__button--active {
+    height: auto;
+    border-top: 5px solid var(--red);
   }
 
   /* ============================= Tab Box Section End ============================= */

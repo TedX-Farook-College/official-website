@@ -433,13 +433,20 @@ textarea::placeholder {
   .footer-distributed .footer-left,
   .footer-distributed .footer-center,
   .footer-distributed .footer-right {
-    display: block;
+    /* display: block; */
     width: 100%;
     margin-bottom: 40px;
     text-align: left;
   }
-  .footer-distributed .footer-center i {
-    margin-left: 0;
+  .footer-distributed .footer-center,.footer-right{
+    margin-left: 20px;
+  }
+  .footer-distributed .footer-main{
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-distributed .footer-main .footer-left img{
+    width: 160px;
   }
   .footer-distributed .footer-credits {
     max-width: 300px;

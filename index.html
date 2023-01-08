@@ -12,8 +12,6 @@
     />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <!-- Custom JS -->
-    <script defer src="./assets/js/main.js"></script>
     <title>TEDx Farook College</title>
   </head>
   <body>
@@ -164,14 +162,26 @@
         </div>
         <div class="right-section">
           <fieldset class="right-field">
-            <form action="#">
+            <form id="submit-form" method="post" autocomplete="off">
               <fieldset>
                 <legend>Name</legend>
-                <input type="text" placeholder="Enter your name" />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
               </fieldset>
               <fieldset>
                 <legend>E-Mail</legend>
-                <input type="email" placeholder="Enter your email" />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
               </fieldset>
               <fieldset>
                 <legend>Message</legend>
@@ -180,6 +190,7 @@
                   id="message"
                   cols="30"
                   rows="5"
+                  required
                 ></textarea>
               </fieldset>
               <div class="form-footer">
@@ -245,5 +256,9 @@
         </div>
       </footer>
     </div>
+    <!-- AJAX CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Custom JS -->
+    <script defer src="./assets/js/main.js"></script>
   </body>
 </html>

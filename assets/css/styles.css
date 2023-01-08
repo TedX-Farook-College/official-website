@@ -24,7 +24,6 @@ h1 {
   font-weight: 700;
 }
 
-
 a,
 a:visited,
 a:hover {
@@ -57,7 +56,8 @@ a:hover {
   font-weight: 500;
   font-size: 20px;
 }
-#toggle,#sidebar{
+#toggle,
+#sidebar {
   display: none;
 }
 
@@ -195,7 +195,6 @@ a:hover {
 }
 
 .contact .left-section .content p {
-  margin-top: 2px;
   max-width: 230px;
   line-height: 20px;
 }
@@ -235,16 +234,10 @@ a:hover {
   flex-direction: column;
 }
 
-
 .contact .right-section form ::placeholder {
   font-size: 16px;
   font-weight: 400;
 }
-
-/* textarea::placeholder {
-  font-size: 50px;
-  font-weight: 400;
-} */
 
 .contact .right-section .right-field form fieldset {
   margin-top: 1.4rem;
@@ -375,63 +368,66 @@ a:hover {
 .footer-distributed .footer-credits a:hover {
   color: var(--white);
 }
+
 /* Media Query */
+/* ================================================================ */
 
 @media (max-width: 600px) {
-    
-  /* Hamburger Menu */
+  /* container class */
+  .container {
+    padding: 0 2rem;
+  }
 
-  #toggle{
+  /* Hamburger Menu */
+  #toggle {
     position: fixed;
     z-index: 1;
     top: 0.7rem;
-    left:2rem;
+    left: 2rem;
     width: 2rem;
     height: 2rem;
-    /* background-color: #000000; */
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.5s;
-}
-#toggle::before{
+  }
+  #toggle::before {
     content: '';
-    position:fixed;
+    position: fixed;
     height: 2px;
-    width:1.5rem ;
-    background: #ffffff;
+    width: 1.5rem;
+    background: var(--white);
     transform: translateY(-0.25rem);
     transition: 0.2s;
-}
-#toggle::after{
+  }
+  #toggle::after {
     content: '';
-    position:fixed;
+    position: fixed;
     height: 2px;
-    width:1.5rem ;
-    background: #ffffff;
+    width: 1.5rem;
+    background: var(--white);
     transform: translateY(0.25rem);
     transition: 0.2s;
-}
-#toogle::selection{
+  }
+  #toogle::selection {
     content: '';
-    position:fixed;
+    position: fixed;
     height: 2px;
-    width:1.5rem ;
-    background: #ffffff;
-    /* transform: translateY(-0.25rem); */
+    width: 1.5rem;
+    background: var(--white);
     transition: 0.2s;
-}
-#toggle.active{
-    left:165px;
-}
-#toggle.active::before{
+  }
+  #toggle.active {
+    left: 165px;
+  }
+  #toggle.active::before {
     transform: translateY(0rem) rotate(45deg);
-}
-#toggle.active::after{
+  }
+  #toggle.active::after {
     transform: translateY(0rem) rotate(-45deg);
-}
+  }
 
-#sidebar{
+  #sidebar {
     display: block;
     position: fixed;
     padding-left: 1rem;
@@ -439,41 +435,38 @@ a:hover {
     left: -200px;
     width: 200px;
     height: 100%;
-    background-color: #000000;
+    background-color: var(--black);
     transition: 0.5s;
-}
-#sidebar.active{
-    /* padding-left: 1rem; */
+  }
+  #sidebar.active {
     left: 0px;
     position: fixed;
-}
-#sidebar ul{
+  }
+  #sidebar ul {
     position: relative;
     margin-top: 50px;
-}
-#sidebar ul li{
+  }
+  #sidebar ul li {
     list-style: none;
     display: inline-block;
     width: 100%;
     padding: 10px 0px;
-}
-#sidebar ul li img{
-    height:2rem;
+  }
+  #sidebar ul li img {
+    height: 2rem;
     transform: translateY(-1rem);
-}
-#sidebar ul li a{
-    color: #ffffff;
+  }
+  #sidebar ul li a {
+    color: var(--white);
     text-decoration: none;
     font-size: 1rem;
     letter-spacing: 1px;
-}
-  .container {
-    padding: 0 2rem;
   }
+
   /* Navbar Section */
   .nav .nav-logo img {
     width: 12rem;
-    margin-left:3rem ;
+    margin-left: 3rem;
   }
   .nav .nav-links {
     display: none;
@@ -489,7 +482,7 @@ a:hover {
     top: 40px;
     width: 380px;
   }
-  /* Hero Section */
+  /* ============================= Hero Section Start ============================= */
   .hero {
     padding-top: 8rem;
   }
@@ -505,26 +498,45 @@ a:hover {
     padding-left: 2rem;
     margin-top: 20px;
     text-align: left;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 22px;
   }
-  /* Tab Index Section */
+  /* ============================= Hero Section End ============================= */
+  /* ============================= Tab Box Section Start ============================= */
   .tab__content {
-    font-size: 18px;
+    font-size: 16px;
     padding: 1.5rem 1.5rem;
-    line-height: 25px;
+    line-height: 22px;
     letter-spacing: 0.6px;
   }
-  /* Contact Section */
+  .tabs .tab__sidebar:nth-child(1),
+  .tabs .tab__sidebar:nth-child(2) {
+    
+  }
+
+  /* ============================= Tab Box Section End ============================= */
+  /* ============================= Event Section Start ============================= */
+  .event p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  /* ============================= Event Section End ============================= */
+  /* ============================= Contact Section Start ============================= */
   .contact-sub {
     margin-top: 3rem;
   }
   .contact {
     display: grid;
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 25px;
   }
-  /* Footer Section */
+  .contact .left-section .content p {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  /* ============================= Contact Section Start ============================= */
+  /* ============================= Footer Section Start ============================= */
   .footer-distributed .footer-left,
   .footer-distributed .footer-center,
   .footer-distributed .footer-right {
@@ -533,19 +545,19 @@ a:hover {
     margin-bottom: 40px;
     text-align: left;
   }
-  .footer-distributed .footer-center,.footer-right{
+  .footer-distributed .footer-center,
+  .footer-right {
     margin-left: 20px;
   }
-  .footer-distributed .footer-main{
+  .footer-distributed .footer-main {
     display: flex;
     justify-content: space-between;
   }
-  .footer-distributed .footer-main .footer-left img{
+  .footer-distributed .footer-main .footer-left img {
     width: 160px;
   }
   .footer-distributed .footer-credits {
     max-width: 300px;
   }
-
-
+  /* ============================= Footer Section End ============================= */
 }

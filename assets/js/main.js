@@ -1,4 +1,4 @@
-// Navigation Menu
+/* ============================= Navigation Menu =============================   */
 const toggle = document.getElementById("toggle");
 const sidebar = document.getElementById("sidebar");
 document.onclick = function(e){
@@ -13,7 +13,7 @@ toggle.onclick = function(){
     sidebar.classList.toggle('active')
 }
 
-// Navbar
+/* ============================= Navbar =============================   */
 window.addEventListener('scroll', () => {
   var nav = document.querySelector('.nav')
   if (window.pageYOffset > 80) {
@@ -23,7 +23,7 @@ window.addEventListener('scroll', () => {
   }
 })
 
-// tab section
+/* ============================= Tab Section =============================   */
 function setupTab() {
   document.querySelectorAll('.tab__button').forEach((button) => {
     button.addEventListener('click', () => {
@@ -49,19 +49,21 @@ document.addEventListener('DOMContentLoaded', () => {
   setupTab()
 })
 
-// Form Submission
-$("#submit-form").submit((e)=>{
-  e.preventDefault()
-  $.ajax({
-      url:"https://script.google.com/macros/s/AKfycbx_14O6RMRre_yHLC-ML5zQUwJyJuFDb2IYfKelWykpj11u3C3nlFdkJJrxOtZu5y-Q/exec",
-      data:$("#submit-form").serialize(),
-      method:"post",
-      success:function (response){
-          alert("Form submitted successfully!!")
-          window.location.reload()
-      },
-      error:function (err){
-          alert("Something Error Occured!!")
-      }
-  })
-})
+/* ============================= Form Submission =============================   */
+// https://script.google.com/macros/s/AKfycbx_14O6RMRre_yHLC-ML5zQUwJyJuFDb2IYfKelWykpj11u3C3nlFdkJJrxOtZu5y-Q/exec
+
+// $("#submit-form").submit((e)=>{
+//   e.preventDefault()
+//   $.ajax({
+//       url:"",
+//       data:$("#submit-form").serialize(),
+//       method:"post",
+//       success:function (response){
+//           alert("Form submitted successfully!!")
+//           window.location.reload()
+//       },
+//       error:function (err){
+//           alert("Something Error Occured!!")
+//       }
+//   })
+// })

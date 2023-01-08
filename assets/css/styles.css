@@ -30,10 +30,6 @@ a:hover {
   text-decoration: none;
 }
 
-/* Dev */
-
-/* Dev */
-
 .nav {
   width: 100vw;
   display: flex;
@@ -95,7 +91,7 @@ a:hover {
   padding: 0 5rem;
 }
 
-/* tab section */
+ /* ============================= Tab Section Start =============================   */
 
 .section-sub {
   margin-top: 4rem;
@@ -155,8 +151,9 @@ a:hover {
 .tab__content--active {
   display: block;
 }
+/* ============================= Tab Section End =============================   */
 
-/* Event Section */
+/* ============================= Event Section Start =============================   */
 .event h1 {
   background: linear-gradient(90deg, #ff2500 -16.21%, #ffffff 39.71%);
   font-weight: 700;
@@ -170,6 +167,7 @@ a:hover {
   font-size: 20px;
   line-height: 25px;
 }
+/* ============================= Event Section End =============================   */
 
 /* ============================= Contact Section Start ============================= */
 .contact-sub {

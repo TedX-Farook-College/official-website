@@ -30,6 +30,10 @@ a:hover {
   text-decoration: none;
 }
 
+/* Dev */
+
+/* Dev */
+
 .nav {
   width: 100vw;
   display: flex;
@@ -60,7 +64,9 @@ a:hover {
   top: 25px;
   left: 120px;
 }
-
+.gradient-mobile {
+  display: none;
+}
 .hero {
   padding-top: 10rem;
 }
@@ -75,8 +81,10 @@ a:hover {
 .hero p {
   margin-top: 20px;
   text-align: center;
+  margin: auto;
   font-size: 20px;
   line-height: 24px;
+  max-width: 550px;
 }
 
 .container {
@@ -215,7 +223,7 @@ a:hover {
 .contact .right-section .right-field {
   padding: 1.5rem 1.5rem;
   border-radius: 20px;
-  /* width: 90%; */
+  width: 96%;
 }
 
 .contact .right-section form {
@@ -311,13 +319,11 @@ textarea::placeholder {
 }
 
 /* Footer left */
-
 .footer-distributed .footer-left {
   width: 55%;
 }
 
 /* Footer Center */
-
 .footer-distributed .footer-center {
   width: 20%;
 }
@@ -338,7 +344,6 @@ textarea::placeholder {
 }
 
 /* Footer Right */
-
 .footer-distributed .footer-right {
   width: 15%;
 }
@@ -367,18 +372,64 @@ textarea::placeholder {
 }
 /* Media Query */
 
-/* Footer Section */
 @media (max-width: 600px) {
+  .container {
+    padding: 0 2rem;
+  }
+  /* Navbar Section */
+  .nav .nav-logo img {
+    width: 15rem;
+  }
   .nav .nav-links {
     display: none;
   }
+  /* Radial Gradient */
   .gradient {
     display: none;
   }
+  .gradient-mobile {
+    z-index: -1;
+    display: block;
+    position: absolute;
+    top: 40px;
+    width: 380px;
+  }
+  /* Hero Section */
+  .hero {
+    padding-top: 8rem;
+  }
+  .hero h1 {
+    padding-left: 2rem;
+    font-size: 4rem;
+    line-height: 3.5rem;
+    letter-spacing: -3.5px;
+    text-align: left;
+    font-weight: 700;
+  }
+  .hero p {
+    padding-left: 2rem;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 17px;
+    line-height: 22px;
+  }
+  /* Tab Index Section */
+  .tab__content {
+    font-size: 18px;
+    padding: 1.5rem 1.5rem;
+    line-height: 25px;
+    letter-spacing: 0.6px;
+  }
+  /* Contact Section */
+  .contact-sub {
+    margin-top: 3rem;
+  }
   .contact {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
+    gap: 25px;
   }
+  /* Footer Section */
   .footer-distributed .footer-left,
   .footer-distributed .footer-center,
   .footer-distributed .footer-right {

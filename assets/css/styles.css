@@ -52,6 +52,10 @@ a:hover {
   font-weight: 500;
   font-size: 20px;
 }
+.nav .nav-links a:hover {
+  border-bottom: 1px solid var(--red);
+  padding-bottom: 0.5rem;
+}
 #toggle,
 #sidebar {
   display: none;
@@ -126,7 +130,6 @@ a:hover {
 .tab__button {
   flex: 1;
   padding-top: 10px;
-  text-transform: uppercase;
   color: rgba(255, 255, 255, 0.912);
   font-size: 1rem;
   background: none;
@@ -155,7 +158,7 @@ a:hover {
 
 /* ============================= Event Section Start =============================   */
 .event h1 {
-  background: linear-gradient(90deg, #ff2500 -16.21%, #ffffff 39.71%);
+  background: linear-gradient(90deg, #ff2500 -1.21%, #ffffff 29.71%);
   font-weight: 700;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -185,7 +188,7 @@ a:hover {
 }
 
 .contact .left-section .content h1 {
-  background: linear-gradient(90deg, #ff2500 -2.21%, #ffffff 13.71%);
+  background: linear-gradient(90deg, #ff2500 0.21%, #ffffff 23.71%);
   font-weight: 700;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -418,7 +421,7 @@ a:hover {
     transition: 0.2s;
   }
   #toggle.active {
-    left: 165px;
+    left: 265px;
   }
   #toggle.active::before {
     transform: translateY(0rem) rotate(45deg);
@@ -432,8 +435,8 @@ a:hover {
     position: fixed;
     padding-left: 1rem;
     top: 0;
-    left: -200px;
-    width: 200px;
+    left: -300px;
+    width: 300px;
     height: 100%;
     background-color: var(--black);
     transition: 0.5s;
@@ -459,8 +462,11 @@ a:hover {
   #sidebar ul li a {
     color: var(--white);
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.25rem;
     letter-spacing: 1px;
+  }
+  #sidebar .sidebar_logo {
+    margin-bottom: 40px;
   }
 
   /* Navbar Section */
@@ -519,6 +525,14 @@ a:hover {
 
   /* ============================= Tab Box Section End ============================= */
   /* ============================= Event Section Start ============================= */
+  .event h1 {
+    background: linear-gradient(90deg, #ff2500 19.79%, #fff 59.71%);
+    font-weight: 700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+  }
   .event p {
     font-size: 16px;
     line-height: 22px;
@@ -532,6 +546,13 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr;
     gap: 25px;
+  }
+  .contact .left-section .content h1 {
+    background:linear-gradient(90deg, #ff2500 6.21%, #fff 45.71%);
+    font-weight: 700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
   .contact .left-section .content p {
     margin-top: 12px;

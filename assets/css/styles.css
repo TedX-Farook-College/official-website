@@ -308,7 +308,9 @@ a:hover {
   cursor: pointer;
   opacity: 0.9;
 }
+
 .contact-email{
+  color: var(--white);
   padding: 0.45rem 0.45rem;
   border-radius: 8px;
   width: 96%;

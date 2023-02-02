@@ -32,6 +32,7 @@ a:hover {
 }
 
 .nav {
+  top: 0;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -335,6 +336,8 @@ a:hover {
 .footer-main{
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0 50px;
 }
 
 .footer-distributed .footer-left,
@@ -635,7 +638,7 @@ a:hover {
   }
   .footer-distributed .footer-center,
   .footer-right {
-    padding-left: 30px;
+    padding-left:1rem;
   }
   .footer-distributed .footer-main {
     display: flex;
@@ -655,4 +658,33 @@ a:hover {
     max-width: 300px;
   }
   /* ============================= Footer Section End ============================= */
+
+  /* ===================About Page Start================= */
+  .about-container{
+    padding:0;
+    margin: 0;
+  }
+}
+
+.about-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+.about-container .about-content{
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.about-container hr{
+  width: 70%;
+}
+@media (min-width: 600px) {
+  .about-container{
+    padding: 70px;
+  }
 }

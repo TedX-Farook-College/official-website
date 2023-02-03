@@ -666,7 +666,23 @@ a:hover {
     line-height: 22px;
     letter-spacing: 0.6px;
   }
+  .about-container .about-content p{
+    font-size: 18px;
+  }
 }
+.about-container .about-content h2{
+  background: linear-gradient(90deg, #ff2500 0.41%, #ffffff 50.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.about-container .content-tedxfc  h2{
+  background: linear-gradient(90deg, #ff2500 0.41%, #ffffff 60.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 
 .about-container{
   display: flex;
@@ -681,14 +697,26 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 50px;
+
 }
-.about-container hr{
-  width: 70%;
+.about-container .about-content h2{
+  background: linear-gradient(90deg, #ff2500 0.41%, #ffffff 23.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
+.about-container .content-tedxfc  h2{
+  background: linear-gradient(90deg, #ff2500 0.41%, #ffffff 40.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 @media (min-width: 600px) {
   .about-container{
     padding: 70px;
   }
+  
 }
 
 /* ====================About page End============ */
@@ -698,19 +726,64 @@ a:hover {
 .sponsor-container{
   height: 500px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* grid-gap: 10px; */
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
 }
 .sponsor-container .sponsor-logo{
   display: block !important;
-  width: 100%;
-  height: 100px;
+  width: 50%;
+  /* height: 100px; */
   align-self: center;
   justify-self: center;
+  
 }
 
 @media (max-width: 600px){
   .sponsor-container{
     grid-template-columns: 1fr;
   }
+}
+
+
+/* =============contact page ================== */
+.organizer-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+.organizer,.co-organizer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  /* background-color: rgb(227, 61, 61); */
+}
+.organizer-image{
+  height: 300px;
+  border-radius:50px;
+}
+.organizer h3,.co-organizer h3{
+  font-size:1.5rem;
+}
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 150px;
+  padding: 0 5rem;
+}
+@media (max-width: 600px){
+  .organizer-container{
+    grid-template-columns: 1fr;
+  }
+  .organizer-image{
+    height: 250px;
+  }
+  .contact-container{
+    padding:0 2rem;
+  } 
 }

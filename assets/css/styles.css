@@ -660,9 +660,11 @@ a:hover {
   /* ============================= Footer Section End ============================= */
 
   /* ===================About Page Start================= */
-  .about-container{
-    padding:0;
-    margin: 0;
+  .about-container .about-content{
+    font-size: 16px;
+    /* padding: 1.5rem 1.5rem; */
+    line-height: 22px;
+    letter-spacing: 0.6px;
   }
 }
 
@@ -686,5 +688,29 @@ a:hover {
 @media (min-width: 600px) {
   .about-container{
     padding: 70px;
+  }
+}
+
+/* ====================About page End============ */
+
+
+/* ====================Sponsor Page============= */
+.sponsor-container{
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-gap: 10px; */
+}
+.sponsor-container .sponsor-logo{
+  display: block !important;
+  width: 100%;
+  height: 100px;
+  align-self: center;
+  justify-self: center;
+}
+
+@media (max-width: 600px){
+  .sponsor-container{
+    grid-template-columns: 1fr;
   }
 }
